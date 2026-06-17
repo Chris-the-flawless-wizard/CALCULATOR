@@ -1,14 +1,16 @@
-function addValue(value){
+function addValue(value) {
     document.getElementById("display").value += value;
 }
 
-
-function clearDisplay(){
-    document.getElementById("display").value="";
+function clearDisplay() {
+    document.getElementById("display").value = "";
 }
 
-
-function calculate(){
-    let result = eval(document.getElementById("display").value);
-    document.getElementById("display").value=result;
+function calculate() {
+    try {
+        let result = eval(document.getElementById("display").value);
+        document.getElementById("display").value = result;
+    } catch {
+        document.getElementById("display").value = "Error";
+    }
 }
