@@ -1,14 +1,13 @@
-<body>
+const display = document.getElementById("display");
 
-    <div class="calculator">
-        <input id="display" type="text">
+function add(value) {
+    display.value += value;
+}
 
-        <button onclick="add('7')">7</button>
-        <button onclick="add('8')">8</button>
-        <button onclick="add('+')">+</button>
-        <button onclick="calculate()">=</button>
-    </div>
+function clearDisplay() {
+    display.value = "";
+}
 
-    <script src="script.js"></script>
-
-</body>
+function calculate() {
+    display.value = eval(display.value);
+}
