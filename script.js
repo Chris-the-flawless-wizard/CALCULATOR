@@ -1,28 +1,14 @@
-let display = document.getElementById("display");
+<body>
 
-function add(value) {
-    display.value += value;
-}
+    <div class="calculator">
+        <input id="display" type="text">
 
+        <button onclick="add('7')">7</button>
+        <button onclick="add('8')">8</button>
+        <button onclick="add('+')">+</button>
+        <button onclick="calculate()">=</button>
+    </div>
 
-function clearDisplay() {
-    display.value = "";
-}
+    <script src="script.js"></script>
 
-
-function deleteLast() {
-    display.value = display.value.slice(0, -1);
-}
-
-
-function calculate() {
-
-    try {
-        display.value = eval(display.value);
-    }
-
-    catch(error) {
-        display.value = "Error";
-    }
-
-}
+</body>
