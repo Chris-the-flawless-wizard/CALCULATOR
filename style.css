@@ -1,4 +1,11 @@
-background-color: black;
-background-color: green;
-background-color: #f4f4f4;
-background-color: rgb(255, 200, 100);
+body {
+    margin: 0;
+    padding: 0;
+    background-image: url("images/image.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    min-height: 100vh;
+    font-family: Arial, sans-serif;
+}
