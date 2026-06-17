@@ -1,3 +1,5 @@
-index.html
-style.css
-script.js
+iphone-calculator/
+│
+├── index.html
+├── style.css
+└── script.js
